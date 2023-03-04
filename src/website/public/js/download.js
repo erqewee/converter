@@ -4,7 +4,7 @@ const format = document.getElementById('format');
 const quality = document.getElementById('quality');
 const qualityLabel = document.getElementById("quality-label");
 
-const serverURL = 'http://localhost:3000';
+const serverURL = 'https://youtubeconverter.erenix.repl.co';
 
 convertButton.addEventListener('click', () => {
   const url = String(inputURL.value);
