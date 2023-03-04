@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+}
+
+#snowRain {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fa-snowflake-o {
+  color: #fff;
+  position: absolute;
+  top: -20px;
+  animation: rain linear forwards;
+}
+
+@keyframes rain {
+  to {
+    transform: translateY(105vh);
+  }
+}

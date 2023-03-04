@@ -1,0 +1,118 @@
+*,
+html {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171723;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.options > select {
+  text-align: center;
+}
+
+.input-button {
+  flex-direction: row;
+}
+
+.header {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 1s linear 0s infinite;
+}
+
+#quality-label {
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 0.5s linear 0s infinite;
+}
+
+#type {
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 0.5s linear 0s infinite;
+}
+
+#downloading {
+  animation: colorRotate 2s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  25% {
+    color: #009966;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+select {
+  margin: 50px;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  height: 34px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+  text-align-last: center;
+}
+
+.input-url {
+  border-radius: 4px 0 0 4px;
+  width: 30em;
+  border: 2px solid #eeeeee;
+  background: #eeeeee;
+  outline: none;
+}
+
+.status {
+  padding: 2em;
+}
+
+.input-url:focus {
+  border: 2px solid #0485ff;
+}
+
+.button-convert {
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid #0485ff;
+  background: #0485ff;
+  color: #fff;
+}
+
+.input-url,
+.button-convert {
+  font-size: 1em;
+  padding: 10px 15px;
+}

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>YouTube Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/css/styles.css" />
+  <link rel="stylesheet" href="public/css/snow.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" />
+</head>
+
+<body>
+  <div id="snowRain"></div>
+  <div class="container">
+    <div>
+      <h1 class="header">YouTube Video Converter</h1>
+    </div>
+
+    <div class="options">
+      <form>
+        <label id="type">
+          <strong>Conversion Type</strong>
+        </label>
+        <select class="input-audio-video" id="format">
+          <option value="MP3">MP3</option>
+          <option value="MP4">MP4</option>
+          <option value="WEBM" selected>WEBM</option>
+        </select>
+        <label id="quality-label">
+          <strong>Quality</strong>
+        </label>
+        <select id="quality">
+          <option value="high" selected>Highest</option>
+          <option value="low">Lowest</option>
+        </select>
+      </form>
+    </div>
+    <div class="input-button">
+      <label>
+        <input class="input-url" placeholder="Video URL or CODE">
+      </label>
+      <button class="button-convert">Convert</button>
+    </div>
+    <div class="status">
+      <h3 id="downloading"></h3>
+    </div>
+  </div>
+  <script src="public/js/download.js" async defer></script>
+  <script src="public/js/snow.js" async defer></script>
+</body>
+
+</html>
