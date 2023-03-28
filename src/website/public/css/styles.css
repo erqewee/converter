@@ -1,11 +1,6 @@
 *,
 html {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #171723;
 }
 
 .container {
@@ -16,7 +11,7 @@ body {
   height: 100vh;
 }
 
-.options > select {
+.options>select {
   text-align: center;
 }
 
@@ -26,70 +21,78 @@ body {
 
 .header {
   text-align: center;
-  text-decoration: underline;
-  font-size: 32px;
-  font-family: monospace;
-  letter-spacing: 5px;
-  animation: colorRotate 1s linear 0s infinite;
+  text-decoration: wavy;
+  font-size: 44px;
+  letter-spacing: 7px;
+  animation: colorRotate 2s linear 1s infinite;
 }
 
 #quality-label {
-  font-family: monospace;
-  letter-spacing: 5px;
-  animation: colorRotate 0.5s linear 0s infinite;
+  letter-spacing: 3px;
+  padding-left: 96px;
+  animation: colorRotate 1s linear 1s infinite;
 }
 
-#type {
-  font-family: monospace;
-  letter-spacing: 5px;
-  animation: colorRotate 0.5s linear 0s infinite;
+#conversion-label {
+  letter-spacing: 3px;
+  animation: colorRotate 1s linear 1s infinite;
+}
+
+#bitrate-label {
+  letter-spacing: 3px;
+  padding-left: 98px;
+  animation: colorRotate 1s linear 1s infinite;
 }
 
 #downloading {
-  animation: colorRotate 2s linear 0s infinite;
+  animation: colorRotate 2.5s linear 1s infinite;
 }
 
 @keyframes colorRotate {
   from {
     color: #6666ff;
   }
+
   10% {
     color: #0099ff;
   }
+
   25% {
     color: #009966;
   }
+
   50% {
     color: #00ff00;
   }
+
   75% {
     color: #ff3399;
   }
+
   100% {
     color: #6666ff;
   }
 }
 
 select {
-  margin: 50px;
-  width: 268px;
-  padding: 5px;
+  margin: 20px;
+  width: 250px;
+  padding: 6px;
   font-size: 16px;
   line-height: 1;
   border: 0;
-  border-radius: 5px;
-  height: 34px;
-  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
-    no-repeat right #ddd;
-  appearance: none;
-  -webkit-appearance: none;
-  background-position-x: 244px;
-  text-align-last: center;
+  border-radius: 8px;
+  height: 35px;
+  background: url(https://img.icons8.com/fluency/48/null/expand-arrow.png) no-repeat right #ddd;
+  -webkit-appearance: initial;
+  appearance: inherit;
+  background-position-x: 210px;
+  background-size: 35px;
 }
 
 .input-url {
-  border-radius: 4px 0 0 4px;
-  width: 30em;
+  border-radius: 16px;
+  width: 35em;
   border: 2px solid #eeeeee;
   background: #eeeeee;
   outline: none;
@@ -105,14 +108,15 @@ select {
 
 .button-convert {
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 3px;
   border: 2px solid #0485ff;
   background: #0485ff;
   color: #fff;
+  margin-left: 15px;
+  letter-spacing: 2px;
 }
 
 .input-url,
 .button-convert {
-  font-size: 1em;
   padding: 10px 15px;
 }

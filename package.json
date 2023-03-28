@@ -9,14 +9,13 @@
   },
   "dependencies": {
     "@sapphire/fetch": "^2.4.1",
-    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "ytdl-core": "^4.11.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
-    "@types/node": "^18.14.5"
+    "@types/node": "^18.15.10"
   },
   "keywords": [],
   "author": "",

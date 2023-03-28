@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -19,36 +19,56 @@
     </div>
 
     <div class="options">
-      <form>
-        <label id="type">
-          <strong>Conversion Type</strong>
-        </label>
-        <select class="input-audio-video" id="format">
-          <option value="MP3">MP3</option>
-          <option value="MP4">MP4</option>
-          <option value="WEBM" selected>WEBM</option>
-        </select>
-        <label id="quality-label">
-          <strong>Quality</strong>
-        </label>
-        <select id="quality">
-          <option value="high" selected>Highest</option>
-          <option value="low">Lowest</option>
-        </select>
-      </form>
+      <label id="conversion-label">
+        <strong>Conversion Type</strong>
+      </label>
+      <select class="conversion" id="format">
+        <option value="MP3">MP3</option>
+        <option value="MP4">MP4</option>
+        <option value="AVI">AVI</option>
+        <option value="3GP">3GP</option>
+        <option value="FLV">FLV</option>
+        <option value="MPEG">MPEG</option>
+        <option value="MOV">MOV</option>
+        <option value="WEBM" selected>WEBM</option>
+      </select>
+      <br>
+      <label id="bitrate-label">
+        <strong>Bitrate</strong>
+      </label>
+      <select id="bitrate" disabled>
+        <option value="default" selected>Default</option>
+        <option value="64">64 kbps</option>
+        <option value="96">96 kbps</option>
+        <option value="128">128 kbps</option>
+        <option value="160">160 kbps</option>
+        <option value="192">192 kbps</option>
+        <option value="256">256 kbps</option>
+        <option value="320">320 kbps</option>
+      </select>
+      <br>
+      <label id="quality-label">
+        <strong>Quality</strong>
+      </label>
+      <select id="quality">
+        <option value="LOW">Lowest</option>
+        <option value="HIGH" selected>Highest</option>
+      </select>
     </div>
     <div class="input-button">
       <label>
-        <input class="input-url" placeholder="Video URL or CODE">
+        <input class="input-url" placeholder="Video URL or CODE" id="input">
       </label>
-      <button class="button-convert">Convert</button>
+      <button class="button-convert">Download</button>
     </div>
     <div class="status">
       <h3 id="downloading"></h3>
     </div>
   </div>
+  
   <script src="public/js/download.js" async defer></script>
   <script src="public/js/snow.js" async defer></script>
+  <script src="public/js/listeners.js" async defer></script>
 </body>
 
 </html>
